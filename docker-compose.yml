@@ -10,11 +10,11 @@ services:
       - "./brat-data:/bratdata"
       - "./brat-cfg:/bratcfg"
     environment:
-      - BRAT_USERNAME=${USER}
-      - BRAT_PASSWORD=${PASS}
+      - BRAT_USERNAME=admin
+      - BRAT_PASSWORD=admin
       - BRAT_EMAIL=brat@example.com
     ports:
-      - 80
+      - "8080:80"
 
 #    labels:
 #      - "traefik.enable=true"
